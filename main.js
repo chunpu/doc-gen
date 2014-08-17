@@ -13,6 +13,6 @@ function main() {
 
 function getMixin(section) {
     return section.map(function(x) {
-        return 'mixin ' + x + '\n  include docs/' + x + '.md'
+        return 'mixin ' + x + '\n  include:markdown docs/' + x + '.md'
     }).join('\n')
 }
