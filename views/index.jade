@@ -9,10 +9,11 @@ html
   body
     section#top
       #menu
-        a#toggle(href='#'): i.icon-menu menu
-        ul
-          each x in section
-            li: a(href='##{x}')= x
+        //
+            a#toggle(href='#'): i.icon-menu menu
+            ul
+              each x in section
+                li: a(href='##{x}')= x
 
       #heading
         #logo= title
@@ -24,3 +25,5 @@ html
             h1(id='#{x}')= x
             p
               +#{x}
+    script(src='http://code.jquery.com/jquery-2.1.1.min.js')
+    script(src='public/app.js')
