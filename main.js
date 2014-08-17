@@ -9,7 +9,6 @@ function main() {
     fs.writeFileSync('mixin.jade', getMixin(config.section))
     var ret = jade.renderFile('views/index.jade', config)
     fs.writeFileSync('index.html', ret)
-    console.log(config)
 }
 
 function getMixin(section) {
